@@ -42,6 +42,8 @@ def process_orders(app):
             order.set_as_processed()
             save_order(order)
         except:
+            order.set_as_failed()
+            save_order(order)
             app.logger.exception("Error processing order {id}".format(id = order.id))
         return
 
