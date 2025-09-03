@@ -8,7 +8,7 @@ jobs:
     env:
         # SET THESE
         ACR_ADMIN_USERNAME: "GabSwaContainerRegistry"
-        ACR_LOGIN_SERVER_URL: "gabswarecontainerregistry.azurecr.io"
+        ACR_LOGIN_SERVER_URL: "gabswacontainerregistry.azurecr.io"
         # SET THESE IN GITHUB
         ACR_ADMIN_PASSWORD: '${{ secrets.ACR_ADMIN_PASSWORD }}'
     # DECIDE WHETHER YOU WANT A BRANCH CHECK - if so remove the other "if"
